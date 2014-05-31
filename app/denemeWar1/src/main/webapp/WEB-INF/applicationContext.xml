@@ -17,8 +17,9 @@ http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 	</tx:jta-transaction-manager>
 	<tx:annotation-driven/>
 	
-	<context:component-scan base-package="com.grkn.*"></context:component-scan>
 	<context:annotation-config/>
+	
  	<import resource="classpath*:user.xml"/>
+ 	<import resource="classpath*:dao.xml"/>
 </beans>
   

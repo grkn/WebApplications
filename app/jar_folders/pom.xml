@@ -1,16 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>appG</groupId>
-  <artifactId>appA</artifactId>
-  <version>V1</version>
+  <parent>
+    <groupId>appG</groupId>
+    <artifactId>appA</artifactId>
+    <version>V1</version>
+  </parent>
+  <artifactId>jar_folders</artifactId>
   <packaging>pom</packaging>
-  
-  <properties>
-        <app.version>V1</app.version>
-    </properties>
   <modules>
-  	<module>denemeWar1</module>
-  	<module>appEar</module>
-  	<module>jar_folders</module>
+  	<module>dao_layer</module>
   </modules>
 </project>
