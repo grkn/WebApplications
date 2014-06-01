@@ -2,6 +2,8 @@ package com.grkn.dao.layer;
 
 import java.util.List;
 
+
+
 import org.springframework.stereotype.Repository;
 
 import com.grkn.dao.layer.base.BaseDao;
@@ -21,5 +23,10 @@ public class UserDao extends BaseDao{
 	public UserModel getUserById(Long id){
 		StringBuffer buf = new StringBuffer(selectStatement).append("where ").append("id = ").append(id);
 		return getJdbcTemplate().queryForObject(buf.toString(),new UserRowMapper());
+	}
+	
+	public UserModel getUserByUsername(String userName){
+		StringBuffer buf = new StringBuffer(selectStatement).append("where ").append("users.name = '").append(userName).append("'");
+		return getJdbcTemplate().queryForObject(buf.toString(), new UserRowMapper());
 	}
 }

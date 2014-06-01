@@ -1,4 +1,4 @@
-package com.grkn.tests;
+/*package com.grkn.tests;
 
 import javax.sql.DataSource;
 
@@ -19,13 +19,12 @@ import org.springframework.transaction.annotation.Transactional;
 public class TransactionTest{
 
 	@Autowired
-	private
-	DataSource dataSource;
+	private	DataSource dataSource;
 	
-	/**
+	
 	 * First update statement is rollbacked is transaction manager is defined
 	 * else fist update statement is committed.
-	 */
+	 
 	@Test
 	@Transactional(value = "transactionalManager")
 	public void test(){
@@ -42,4 +41,4 @@ public class TransactionTest{
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}	
-}
+}*/
